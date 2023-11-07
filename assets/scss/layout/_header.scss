@@ -1,0 +1,56 @@
+header {
+    position: fixed;
+    width: 100%;
+    padding: 0px 45px;
+    z-index: 999;
+    .header-wrap {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        .logo {
+            margin-top: 6rem;
+            svg {
+                width: 12rem;
+                height: auto;
+            }
+        }
+        .menu-list {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+        .menu-item {
+            .link-vodka,
+            .link-gin {
+                font-size: 1.8rem;
+                line-height: 156%;
+                letter-spacing: 0em;
+                color: #8a8a8a;
+                font-weight: bold;
+            }
+            .link-gin {
+                color: #dcd7d2;
+            }
+            .link-shop {
+                font-size: 1.6rem;
+                font-weight: bold;
+                line-height: 100%;
+                height: 4.5rem;
+                background-color: #dcd7d2;
+                color: #000000;
+                padding-right: 2.5rem;
+                padding-left: 2.5rem;
+                padding: 1rem 2rem;
+                border: 2px solid #dcd7d2;
+                border-radius: 500px;
+            }
+
+            .fa-solid {
+                font-size: 4rem;
+                color: #fff;
+            }
+        }
+    }
+}

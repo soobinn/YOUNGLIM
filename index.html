@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>영림 토탈인테리어</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <script src="./assets/js/main.js" defer></script>
+        <script src="./assets/js/common.js" defer></script>
+        <script src="./assets/js/jquery.js" defer></script>
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <nav class="nav">
+                    <div class="nav-wrap">
+                        <div class="logo-box">
+                            <a href="" class="link-home">
+                                <h1 class="blind">로고</h1>
+                            </a>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="nav-item" id="#menu1">
+                                <a href="">브랜드</a>
+                            </li>
+                            <li class="nav-item" id="#menu2">
+                                <a href="">제품</a>
+                            </li>
+                            <li class="nav-item" id="#menu3">
+                                <a href="">매거진.Y</a>
+                            </li>
+                            <li class="nav-item" id="#menu4">
+                                <a href="">쇼룸안내</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="icon-wrap">
+                        <ul class="icon-list">
+                            <li class="icon-item">
+                                <a href="" class="link-serch">
+                                    <span class="blind">검색</span>
+                                </a>
+                            </li>
+                            <li class="icon-item">
+                                <a href="" class="link-wish">
+                                    <span class="blind">찜하기</span>
+                                </a>
+                            </li>
+                            <li class="icon-item">
+                                <a href="" class="link-login">
+                                    <span class="blind">로그인</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="subject">
+                    <div class="sub-list">
+                        <div class="sub-item" data-id="#menu1">
+                            <div class="left">
+                                <span>브랜드</span>
+                            </div>
+                            <div class="right">
+                                <ul class="right-list">
+                                    <li class="right-item">
+                                        <a href="">Made in Younglim</a>
+                                    </li>
+                                    <li class="right-item">
+                                        <a href="">Life with Younglim</a>
+                                    </li>
+                                    <li class="right-item">
+                                        <a href="">Identity of Younglim </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sub-item" data-id="#menu2">
+                            <div class="left">
+                                <span>제품</span>
+                            </div>
+                            <div class="right">
+                                <ul class="right-list">
+                                    <li class="right-item">
+                                        <a href="">키친/붙박이장</a>
+                                    </li>
+                                    <li class="right-item">
+                                        <a href="">바스/타일</a>
+                                    </li>
+                                    <li class="right-item">
+                                        <a href="">키친</a>
+                                    </li>
+                                    <li class="right-item">
+                                        <a href="">도어</a>
+                                    </li>
+                                    <li class="right-item">
+                                        <a href="">중문</a>
+                                    </li>
+                                    <li class="right-item">
+                                        <a href="">몰딩/월/마루</a>
+                                    </li>
+                                    <li class="right-item">
+                                        <a href="">인테리어필름</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub-banner">
+                        <div class="banner-slide">
+                            <div class="swiper bannerSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="./assets/images/content/banner.jpeg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="./assets/images/content/banner2.jpeg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="./assets/images/content/banner3.jpeg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="./assets/images/content/banner4.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="recom">
+                            <div class="con">
+                                <a href="" class="link-con">
+                                    <span>e 카탈로그</span>
+                                </a>
+                            </div>
+                            <div class="con">
+                                <a href="" class="link-con">
+                                    <span>최근 본 제품</span>
+                                </a>
+                            </div>
+                            <div class="con-bottom">
+                                <a href="" class="link-con">
+                                    <p class="recom-text">
+                                        당신에게 꼭 맞는 스타일을 추천해
+                                        드립니다.
+                                    </p>
+                                    <div class="img-box">
+                                        <img
+                                            src="./assets/images/content/banner-cate.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main">
+                <section class="sc-main">
+                    <style></style>
+
+                    <div class="swiper mySwiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="img-box">
+                                    <img
+                                        src="./assets/images/content/main1.jpeg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="title">영림창호</h3>
+                                    <p class="desc">
+                                        뛰어난 단열과 기밀성으로 더 포근하고
+                                        아늑한 창 영림프라임창호 좋은 창호의
+                                        기준이 됩니다.
+                                    </p>
+                                    <a href="" class="link-more"> MORE </a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img-box">
+                                    <img
+                                        src="./assets/images/content/main2.jpeg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="title">하이엔드 라이프, 아펠</h3>
+                                    <p class="desc">
+                                        현재의 우리 그리고 미래의 모두를 위한
+                                        공간과 문화를 만드는 브랜드, 오랜 시간
+                                        쌓아온 기술력과 깊이 있는 디자인으로
+                                        만들어낸 아펠 시리즈를 만나보세요.
+                                    </p>
+                                    <a href="" class="link-more"> MORE </a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img-box">
+                                    <img
+                                        src="./assets/images/content/main3.jpeg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="title">영림 인테리어스</h3>
+                                    <p class="desc">
+                                        영림 인테리어스 디자이너가 제안하는
+                                        스타일컬렉션부터 다양한 사람들의
+                                        리모델링 스토리까지, 나에게 영감을
+                                        불어넣어줄 다채로운 공간을 만나보세요
+                                    </p>
+                                    <a href="" class="link-more"> MORE </a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img-box">
+                                    <img
+                                        src="./assets/images/content/main4.jpeg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="title">영림키친바스</h3>
+                                    <p class="desc">
+                                        365일, 당신의 라이프스타일을 고민합니다.
+                                        나와 우리 가족의 이야기가 담긴 집,
+                                        영림키친바스와 함께 만들어보세요.
+                                    </p>
+                                    <a href="" class="link-more"> MORE </a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img-box">
+                                    <img
+                                        src="./assets/images/content/main5.jpeg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="title">이벤트 참여하기</h3>
+                                    <p class="desc">
+                                        무료 실측 상담만 받아도 선물을 드립니다.
+                                        쉽고 빠른 1:1 맞춤 인테리어 상담, 영림과
+                                        함께 시작해보세요.
+                                    </p>
+                                    <a href="" class="link-more"> MORE </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="cursor"></div>
+                    </div>
+
+                    <div class="scroll">
+                        <div class="line-wrap">
+                            <div class="line"></div>
+                        </div>
+                        <span>scroll</span>
+                    </div>
+                </section>
+
+                <section class="sc-life">
+                    <div class="headline">
+                        <p>
+                            다양한 라이프스타일 속에서 최적화된 당신의 주거
+                            공간을 디자인합니다.
+                        </p>
+                        <p>
+                            가치 있는 당신의 일상을 위한 취향에 딱 맞는 인테리어
+                            디자인을 만나보세요.
+                        </p>
+                        <strong>Lifestyle design beyond material</strong>
+                    </div>
+
+                    <div class="swiper lifeSwiper">
+                        <div class="cursor-icon"></div>
+                        <!-- <div class="custom-cursor">Drag</div> -->
+                        <ul class="swiper-wrapper" data-drag="drag">
+                            <li class="swiper-slide">
+                                <a href="" class="link-life">
+                                    <img
+                                        src="./assets/images/content/life1.jpeg"
+                                        alt=""
+                                    />
+                                    <span>키친</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-life">
+                                    <img
+                                        src="./assets/images/content/life2.jpeg"
+                                        alt=""
+                                    />
+                                    <span>바스</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-life">
+                                    <img
+                                        src="./assets/images/content/life3.jpeg"
+                                        alt=""
+                                    />
+                                    <span>도어</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-life">
+                                    <img
+                                        src="./assets/images/content/life4.jpeg"
+                                        alt=""
+                                    />
+                                    <span>중문</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-life">
+                                    <img
+                                        src="./assets/images/content/life5.jpeg"
+                                        alt=""
+                                    />
+                                    <span>창호</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-life">
+                                    <img
+                                        src="./assets/images/content/life6.jpeg"
+                                        alt=""
+                                    />
+                                    <span>몰딩/월/마루</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-life">
+                                    <img
+                                        src="./assets/images/content/life7.jpeg"
+                                        alt=""
+                                    />
+                                    <span>인테리어</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="" class="link-life">
+                                    <img
+                                        src="./assets/images/content/life8.jpeg"
+                                        alt=""
+                                    />
+                                    <span>붙박이장</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </section>
+
+                <section class="sc-modern">
+                    <div class="btn-wrap">
+                        <div class="btn-inner">
+                            <a class="btn btn-modern on" data-tab="#tab1">
+                                Modern
+                            </a>
+                            <a class="btn btn-natural" data-tab="#tab2">
+                                Natural
+                            </a>
+                            <a class="btn btn-classic" data-tab="#tab3">
+                                Classic
+                            </a>
+                            <a class="btn btn-unique" data-tab="#tab4">
+                                Unique
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="modern-gallary">
+                        <div class="gallary-wrap on" id="tab1">
+                            <div class="top">
+                                <div class="top-left">
+                                    <a href="" class="link-modern">
+                                        <div class="img-box">
+                                            <img
+                                                src="./assets/images/content/modern101.jpeg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="text-box">
+                                            <strong
+                                                >Monochrome Photograph</strong
+                                            >
+                                            <span>Livingroom</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="top-right">
+                                    <img
+                                        src="./assets/images/content/modern1-2.jpeg"
+                                        alt=""
+                                    />
+                                    <div class="text-box">
+                                        <strong>Monochrome Photograph</strong>
+                                        <span>Livingroom</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <span>Modern</span>
+                            </div>
+                            <div class="bottom">
+                                <div class="bottom-wrap">
+                                    <div class="img-box">
+                                        <img
+                                            src="./assets/images/content/modern1-3.jpeg"
+                                            alt=""
+                                        />
+                                        <div class="text-box">
+                                            <strong
+                                                >Monochrome Photograph</strong
+                                            >
+                                            <span>Livingroom</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="desc">
+                                            원룸부터 고급주택까지 다양한 형태의
+                                            주거공간에 모두 잘 어울리는 모던
+                                            스타일을 만나보세요. 꼭 필요한
+                                            물건들만 채워 공간에 여백을 주고
+                                            간결한 선과 면으로 다듬어진 깔끔한
+                                            인테리어를 선보입니다.
+                                        </p>
+                                        <strong class="name">Modern</strong>
+                                        <a href="" class="link-modern"
+                                            >인테리어 스타일 제안</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallary-wrap" id="tab2">
+                            <div class="top">
+                                <div class="top-left">
+                                    <a href="" class="link-modern">
+                                        <div class="img-box">
+                                            <img
+                                                src="./assets/images/content/modern2-1.jpeg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="text-box">
+                                            <strong
+                                                >Monochrome Photograph</strong
+                                            >
+                                            <span>Livingroom</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="top-right">
+                                    <img
+                                        src="./assets/images/content/modern202.jpeg"
+                                        alt=""
+                                    />
+                                    <div class="text-box">
+                                        <strong>Monochrome Photograph</strong>
+                                        <span>Livingroom</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <span>Natural</span>
+                            </div>
+                            <div class="bottom">
+                                <div class="bottom-wrap">
+                                    <div class="img-box">
+                                        <img
+                                            src="./assets/images/content/modern2-3.jpeg"
+                                            alt=""
+                                        />
+                                        <div class="text-box">
+                                            <strong
+                                                >Monochrome Photograph</strong
+                                            >
+                                            <span>Livingroom</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="desc">
+                                            진정한 아름다움은 자연스러움에서
+                                            시작됩니다. 자연에서 얻은 소재와
+                                            색감은 공간에 담담하면서도 활발한
+                                            에너지를 더해주며 오래도록 질리지
+                                            않는 편안하고 안락한 공간을
+                                            완성해줍니다.
+                                        </p>
+                                        <strong class="name">Natural</strong>
+                                        <a href="" class="link-modern"
+                                            >인테리어 스타일 제안</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallary-wrap" id="tab3">
+                            <div class="top">
+                                <div class="top-left">
+                                    <a href="" class="link-modern">
+                                        <div class="img-box">
+                                            <img
+                                                src="./assets/images/content/modern3-1.jpeg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="text-box">
+                                            <strong
+                                                >Monochrome Photograph</strong
+                                            >
+                                            <span>Livingroom</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="top-right">
+                                    <img
+                                        src="./assets/images/content/modern3-2.jpeg"
+                                        alt=""
+                                    />
+                                    <div class="text-box">
+                                        <strong>Monochrome Photograph</strong>
+                                        <span>Livingroom</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <span>Classic</span>
+                            </div>
+                            <div class="bottom">
+                                <div class="bottom-wrap">
+                                    <div class="img-box">
+                                        <img
+                                            src="./assets/images/content/modern3-3.jpeg"
+                                            alt=""
+                                        />
+                                        <div class="text-box">
+                                            <strong
+                                                >Monochrome Photograph</strong
+                                            >
+                                            <span>Livingroom</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="desc">
+                                            과하지 않은 화려함으로 절제된
+                                            아름다움을 보여주는 클래식 스타일은
+                                            적절하게 가미된 장식적 요소와 우아한
+                                            곡선 포인트로 공간에 격식과 품격을
+                                            더해줍니다.
+                                        </p>
+                                        <strong class="name">Classic</strong>
+                                        <a href="" class="link-modern"
+                                            >인테리어 스타일 제안</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallary-wrap" id="tab4">
+                            <div class="top">
+                                <div class="top-left">
+                                    <a href="" class="link-modern">
+                                        <div class="img-box">
+                                            <img
+                                                src="./assets/images/content/modern4-1.jpeg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="text-box">
+                                            <strong
+                                                >Monochrome Photograph</strong
+                                            >
+                                            <span>Livingroom</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="top-right animate__fadeInUp">
+                                    <img
+                                        src="./assets/images/content/modern4-2.jpeg"
+                                        alt=""
+                                    />
+                                    <div class="text-box">
+                                        <strong>Monochrome Photograph</strong>
+                                        <span>Livingroom</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name">
+                                <span>Unique</span>
+                            </div>
+                            <div class="bottom">
+                                <div class="bottom-wrap">
+                                    <div class="img-box">
+                                        <img
+                                            src="./assets/images/content/modern4-3.jpeg"
+                                            alt=""
+                                        />
+                                        <div class="text-box">
+                                            <strong
+                                                >Monochrome Photograph</strong
+                                            >
+                                            <span>Livingroom</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="desc">
+                                            나만의 개성과 취향을 듬뿍 담아 집안
+                                            구석구석 생동감 넘치는 아이템들로
+                                            완성한 유니크 스타일은 지루하고
+                                            나른한 일상에 새로움을 선사합니다.
+                                            톡톡 튀는 컬러와 다양한 소재의
+                                            믹스매치로 완성된 독창적인 공간을
+                                            만나보세요.
+                                        </p>
+                                        <strong class="name">Unique</strong>
+                                        <a href="" class="link-modern"
+                                            >인테리어 스타일 제안</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sc-made">
+                    <div class="headline">
+                        <h3 class="title">Made in Younglim</h3>
+                        <div class="desc">
+                            <p>
+                                영림은 원자재 입고부터 생산, 조립,
+                                납품,서비스까지 한 번에 진행하는
+                            </p>
+                            <p>
+                                원스톱 생산공정 시스템을 통해 품질을 철저히
+                                관리하고 있습니다.
+                            </p>
+                        </div>
+
+                        <div class="link-wrap">
+                            <a href="" class="link-made">
+                                <span>더 보러가기</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="img-box">
+                        <div class="video-wrap">
+                            <!-- <iframe
+                                id="player"
+                                frameborder="0"
+                                allowfullscreen="1"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                title="[영림] 영림 ONE-STOP 생산공정 시스템 (Made in Younglim)"
+                                width="640"
+                                height="360"
+                                src="https://www.youtube.com/embed/L3GplJfWC-s?rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fyl.co.kr&amp;widgetid=1"
+                                data-gtm-yt-inspected-5="true"
+                            ></iframe> -->
+                        </div>
+                        <img src="./assets/images/content/video.jpeg" alt="" />
+                        <button class="btn-play"></button>
+                    </div>
+                </section>
+
+                <section class="sc-category">
+                    <div class="headline">
+                        <h2 class="title">Product Category</h2>
+                    </div>
+                    <ul class="cate-list">
+                        <li class="cate-item">
+                            <a href="" class="link-more">
+                                <img
+                                    src="./assets/images/content/cate1.jpeg"
+                                    alt=""
+                                />
+                                <div class="text-box"><span>키친</span></div>
+                            </a>
+                        </li>
+                        <li class="cate-item">
+                            <a href="" class="link-more">
+                                <img
+                                    src="./assets/images/content/cate2.jpeg"
+                                    alt=""
+                                />
+                                <div class="text-box"><span>바스</span></div>
+                            </a>
+                        </li>
+                        <li class="cate-item">
+                            <a href="" class="link-more">
+                                <img
+                                    src="./assets/images/content/cate3.jpeg"
+                                    alt=""
+                                />
+                                <div class="text-box"><span>도어</span></div>
+                            </a>
+                        </li>
+                        <li class="cate-item">
+                            <a href="" class="link-more">
+                                <img
+                                    src="./assets/images/content/cate4.jpeg"
+                                    alt=""
+                                />
+                                <div class="text-box"><span>중문</span></div>
+                            </a>
+                        </li>
+                        <li class="cate-item">
+                            <a href="" class="link-more">
+                                <img
+                                    src="./assets/images/content/cate5.jpeg"
+                                    alt=""
+                                />
+                                <div class="text-box"><span>창호</span></div>
+                            </a>
+                        </li>
+                        <li class="cate-item">
+                            <a href="" class="link-more">
+                                <img
+                                    src="./assets/images/content/cate6.jpeg"
+                                    alt=""
+                                />
+                                <div class="text-box">
+                                    <span>몰딩/월/마루</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cate-item">
+                            <a href="" class="link-more">
+                                <img
+                                    src="./assets/images/content/cate7.jpeg"
+                                    alt=""
+                                />
+                                <div class="text-box">
+                                    <span>인테리어 필름</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cate-item">
+                            <a href="" class="link-more">
+                                <img
+                                    src="./assets/images/content/cate8.jpeg"
+                                    alt=""
+                                />
+                                <div class="text-box">
+                                    <span>붙박이장</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="sc-pick">
+                    <div class="text-wrap">
+                        <div class="title">
+                            <h2>디자이너 Pick</h2>
+                        </div>
+                    </div>
+                    <div class="swiper pickSwiper">
+                        <div class="swiper-pagination"></div>
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="left">
+                                    <div class="top">
+                                        <a href="" class="link-pick">
+                                            <img
+                                                src="./assets/images/content/pick0.jpg"
+                                                alt=""
+                                            />
+
+                                            <span class="name"
+                                                >베네토 리체&로우 Veneto</span
+                                            >
+                                        </a>
+                                    </div>
+                                    <div class="bottom">
+                                        <a href="" class="link-pick">
+                                            <img
+                                                src="./assets/images/content/pick0-2.jpg"
+                                                alt=""
+                                            />
+                                            <span class="name"
+                                                >베네토 리체&로우 Veneto</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <a href="" class="link-pick">
+                                        <img
+                                            src="./assets/images/content/pick0-3.jpg"
+                                            alt=""
+                                        />
+                                        <span class="name"
+                                            >베네토 리체&로우 Veneto</span
+                                        >
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <div class="left">
+                                    <div class="top">
+                                        <a href="" class="link-pick">
+                                            <img
+                                                src="./assets/images/content/pick0.jpg"
+                                                alt=""
+                                            />
+
+                                            <span class="name"
+                                                >베네토 리체&로우 Veneto</span
+                                            >
+                                        </a>
+                                    </div>
+                                    <div class="bottom">
+                                        <a href="" class="link-pick">
+                                            <img
+                                                src="./assets/images/content/pick0-2.jpg"
+                                                alt=""
+                                            />
+                                            <span class="name"
+                                                >베네토 리체&로우 Veneto</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <a href="" class="link-pick">
+                                        <img
+                                            src="./assets/images/content/pick0-3.jpg"
+                                            alt=""
+                                        />
+                                        <span class="name"
+                                            >베네토 리체&로우 Veneto</span
+                                        >
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <div class="left">
+                                    <div class="top">
+                                        <a href="" class="link-pick">
+                                            <img
+                                                src="./assets/images/content/pick0.jpg"
+                                                alt=""
+                                            />
+
+                                            <span class="name"
+                                                >베네토 리체&로우 Veneto</span
+                                            >
+                                        </a>
+                                    </div>
+                                    <div class="bottom">
+                                        <a href="" class="link-pick">
+                                            <img
+                                                src="./assets/images/content/pick0-2.jpg"
+                                                alt=""
+                                            />
+                                            <span class="name"
+                                                >베네토 리체&로우 Veneto</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <a href="" class="link-pick">
+                                        <img
+                                            src="./assets/images/content/pick0-3.jpg"
+                                            alt=""
+                                        />
+                                        <span class="name"
+                                            >베네토 리체&로우 Veneto</span
+                                        >
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="left">
+                                    <div class="top">
+                                        <a href="" class="link-pick">
+                                            <img
+                                                src="./assets/images/content/pick0.jpg"
+                                                alt=""
+                                            />
+
+                                            <span class="name"
+                                                >베네토 리체&로우 Veneto</span
+                                            >
+                                        </a>
+                                    </div>
+                                    <div class="bottom">
+                                        <a href="" class="link-pick">
+                                            <img
+                                                src="./assets/images/content/pick0-2.jpg"
+                                                alt=""
+                                            />
+                                            <span class="name"
+                                                >베네토 리체&로우 Veneto</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <a href="" class="link-pick">
+                                        <img
+                                            src="./assets/images/content/pick0-3.jpg"
+                                            alt=""
+                                        />
+                                        <span class="name"
+                                            >베네토 리체&로우 Veneto</span
+                                        >
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="left">
+                                    <div class="top">
+                                        <a href="" class="link-pick">
+                                            <img
+                                                src="./assets/images/content/pick0.jpg"
+                                                alt=""
+                                            />
+
+                                            <span class="name"
+                                                >베네토 리체&로우 Veneto</span
+                                            >
+                                        </a>
+                                    </div>
+                                    <div class="bottom">
+                                        <a href="" class="link-pick">
+                                            <img
+                                                src="./assets/images/content/pick0-2.jpg"
+                                                alt=""
+                                            />
+                                            <span class="name"
+                                                >베네토 리체&로우 Veneto</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <a href="" class="link-pick">
+                                        <img
+                                            src="./assets/images/content/pick0-3.jpg"
+                                            alt=""
+                                        />
+                                        <span class="name"
+                                            >베네토 리체&로우 Veneto</span
+                                        >
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="left">
+                                    <div class="top">
+                                        <a href="" class="link-pick">
+                                            <img
+                                                src="./assets/images/content/pick0.jpg"
+                                                alt=""
+                                            />
+
+                                            <span class="name"
+                                                >베네토 리체&로우 Veneto</span
+                                            >
+                                        </a>
+                                    </div>
+                                    <div class="bottom">
+                                        <a href="" class="link-pick">
+                                            <img
+                                                src="./assets/images/content/pick0-2.jpg"
+                                                alt=""
+                                            />
+                                            <span class="name"
+                                                >베네토 리체&로우 Veneto</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <a href="" class="link-pick">
+                                        <img
+                                            src="./assets/images/content/pick0-3.jpg"
+                                            alt=""
+                                        />
+                                        <span class="name"
+                                            >베네토 리체&로우 Veneto</span
+                                        >
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="sc-more">
+                    <div class="more-wrap">
+                        <div class="img-box">
+                            <img
+                                src="./assets/images/content/more.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="text-box">
+                            <h3 class="title">
+                                시간이 흘러도 변하지 않는 가치
+                            </h3>
+                            <div class="desc">
+                                <p>
+                                    시간이 흐름에도 지속되는 삶의 가치를 담아
+                                    행복한 일상을 만들기 위해
+                                </p>
+                                <p>
+                                    영림의 디자이너들은 끊임없이 고민하고
+                                    연구합니다.
+                                </p>
+                            </div>
+                            <div class="link-wrap">
+                                <a href="" class="link-more">더 보러가기</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sc-magazine">
+                    <div class="headline">
+                        <div class="title">
+                            <h2>매거진.Y</h2>
+                        </div>
+                        <div class="more">
+                            <a href="" class="link-more">More</a>
+                        </div>
+                    </div>
+
+                    <div class="magazine">
+                        <ul class="malist">
+                            <li class="maitem">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img
+                                            src="./assets/images/content/ma2.jpeg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="text-box">
+                                        <strong
+                                            >TV CF 속 그 공간, 그 제품
+                                        </strong>
+                                        <span>
+                                            2021 영림의 다양한 신제품들을 담은
+                                            현장 속 인테리어 살펴보기
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="maitem">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img
+                                            src="./assets/images/content/ma3.jpeg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="text-box">
+                                        <strong
+                                            >새로운 꿈을 꾸며 내일을 설계하는 집
+                                        </strong>
+                                        <span>
+                                            눈이 펑펑 오던 어느 겨울, 고요하게
+                                            눈이 쌓인 전원주택 마을을 방문했다
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="maitem">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img
+                                            src="./assets/images/content/ma1.jpeg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="text-box">
+                                        <strong
+                                            >2021 영림 TV CF 광고 촬영 비하인드
+                                        </strong>
+                                        <span>
+                                            토탈인테리어 브랜드 ‘영림’의 첫 TV
+                                            CF 촬영 비하인드 스토리, 지금
+                                            공개합니다.
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="sc-qna">
+                    <div class="qna-wrap">
+                        <div class="headline">
+                            <p class="desc">
+                                지금 영림에 문의 하세요. 전문 컨설팅을 통해
+                                당신의
+                            </p>
+                            <p class="desc">
+                                라이프스타일에 딱 맞는 인테리어를 제안해
+                                드립니다
+                            </p>
+                            <strong>Contact us</strong>
+                        </div>
+                        <div class="qna">
+                            <ul class="qna-list">
+                                <li class="qna-item">
+                                    <a href="" class="link-qna">
+                                        <div class="img-box">
+                                            <img
+                                                src="./assets/images/content/qna1.jpeg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="text-box">
+                                            <p class="name">
+                                                리모델링 상담 신청하기
+                                            </p>
+                                            <div>
+                                                <span>Concierge Service</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="qna-item">
+                                    <a href="" class="link-qna">
+                                        <div class="img-box">
+                                            <img
+                                                src="./assets/images/content/qna2.jpeg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="text-box">
+                                            <p class="name">
+                                                온라인 쇼룸 둘러보기
+                                            </p>
+                                            <div>
+                                                <span>Online Showroom</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="qna-item">
+                                    <a href="" class="link-qna">
+                                        <div class="img-box">
+                                            <img
+                                                src="./assets/images/content/qna3.jpeg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="text-box">
+                                            <p class="name">
+                                                실시간 채팅 상담하기
+                                            </p>
+                                            <div>
+                                                <span>Online Chatting</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sc-start">
+                    <div class="start-wrap">
+                        <div class="left">
+                            <div class="img-box">
+                                <img
+                                    src="./assets/images/content/start1.jpeg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-box">
+                                <div class="text-wrap">
+                                    <h4>인테리어 시작하기</h4>
+                                    <div class="desc">
+                                        <p>
+                                            인테리어 어디서부터 시작해야 할지
+                                            막막하시죠?
+                                        </p>
+                                        <p>
+                                            자제 선택부터 시공방법까지 하나하나
+                                            알려드릴게요
+                                        </p>
+                                    </div>
+                                    <div class="link-wrap">
+                                        <a href="" class="link-start"
+                                            >인테리어 시작하기</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="img-box">
+                                <img
+                                    src="./assets/images/content/start2.jpeg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-box">
+                                <div class="text-wrap">
+                                    <h4>영림 정품 확인하기</h4>
+                                    <div class="desc">
+                                        <p>
+                                            품질에 대한 자부심을 담은<br />
+                                            영림의 제품에는 정품 마크가 표기되어
+                                            있습니다.
+                                        </p>
+                                        <p>
+                                            영림의 철학과 가치를 나타내는
+                                            정품<br />
+                                            마크를 확인해보세요
+                                        </p>
+                                    </div>
+                                    <div class="link-wrap">
+                                        <a href="" class="link-start"
+                                            >인테리어 시작하기</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer-wrap">
+                    <div class="top">
+                        <div class="left">
+                            <h3 class="title">영림 토탈 인테리어</h3>
+                        </div>
+                        <div class="right">
+                            <ul class="right-list">
+                                <li class="right-item">
+                                    <a href="" class="link-footer">브랜드</a>
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer">제품</a>
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer"
+                                        >인테리어 솔루션</a
+                                    >
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer">매거진.Y</a>
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer">쇼룸 안내</a>
+                                </li>
+                            </ul>
+                            <ul class="right-list">
+                                <li class="right-item">
+                                    <a href="" class="link-footer"
+                                        >대리점 개설문의</a
+                                    >
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer">고객센터</a>
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer">A/S 접수</a>
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer">이용약관</a>
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer"
+                                        >개인정보 처리방침</a
+                                    >
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer">회사소개</a>
+                                </li>
+                            </ul>
+                            <ul class="right-list">
+                                <li class="right-item">
+                                    <a href="" class="link-footer">Blog</a>
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer">Instagram</a>
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer">YouTube</a>
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer">영림몰</a>
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer">e카탈로그</a>
+                                </li>
+                                <li class="right-item">
+                                    <a href="" class="link-footer"
+                                        >인테리어필름</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom-con">
+                            <strong>영림임업(주)</strong>
+                            <p>인천광역시 남동구 호구포로9</p>
+                            <p>
+                                <span>대표.황복현</span
+                                ><span class="num"
+                                    >사업자 등록번호.137-81-02411</span
+                                >
+                            </p>
+                            <p>
+                                <span>Tel.1577-5600</span
+                                ><span class="num">사 Fax. 032-813-5505 </span>
+                            </p>
+                        </div>
+                        <div class="bottom-con">
+                            <strong>영림화학(주)</strong>
+                            <p>인천광역시 서구 북항로 31번길 13</p>
+                            <p>
+                                <span>대표.황복현</span
+                                ><span class="num"
+                                    >사업자 등록번호.137-81-02411</span
+                                >
+                            </p>
+                            <p>
+                                <span>Tel.1577-5600</span
+                                ><span class="num"> Fax. 032-578-4455 </span>
+                            </p>
+                        </div>
+                        <div class="bottom-con">
+                            <strong class="wow animate__fadeInBottomRight"
+                                >영림산업(주)</strong
+                            >
+                            <p>인천광역시 남동구 앵고개로 584</p>
+                            <p>
+                                <span>대표.황복현</span
+                                ><span class="num">
+                                    사업자 등록번호. 131-86-10859
+                                </span>
+                            </p>
+                            <p>
+                                <span>Tel.1577-5600</span
+                                ><span class="num"> Fax. 032-812-5501 </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy">
+                    <div class="copy-wrap">
+                        <div class="name">
+                            <span>YOUNGLIM</span>
+                        </div>
+                        <div class="center">
+                            <span>고객센터 1577-5600</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

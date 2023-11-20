@@ -1,0 +1,262 @@
+footer {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    padding-top: 180px;
+    .footer-wrap {
+        background-color: #f6f5f3;
+        // width: 100%;
+        padding: 42px 0 50px;
+        @include desktop {
+            background-color: #faf9f7;
+            padding: 42px 0 0 0;
+        }
+
+        .top {
+            width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            @include desktop {
+                flex-direction: column;
+                width: 100%;
+                padding: 32px 6.94% 50px;
+            }
+            @include tablet {
+                padding: 0px 6.94% 0px;
+            }
+            @include mobile {
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+            .left {
+                .title {
+                    font-size: 24px;
+                    font-weight: 500;
+                    letter-spacing: -0.92px;
+                    color: #707070;
+
+                    @include mobile {
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+            .right {
+                display: flex;
+                gap: 110px;
+                @include desktop {
+                    flex-direction: column;
+                    padding-top: 5%;
+                    gap: 0;
+                }
+
+                .right-list {
+                    // width: 100px;
+                    @include desktop {
+                        border-bottom: 1px solid #ddd;
+                        margin-bottom: 30px;
+                        padding-bottom: 30px;
+                    }
+
+                    &:last-child {
+                        @include desktop {
+                            width: 114px;
+                            border: none;
+                        }
+                    }
+
+                    &:last-child {
+                        a {
+                            position: relative;
+                            &::after {
+                                content: "";
+                                width: 16px;
+                                height: 16px;
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                -webkit-transform: translateY(-50%);
+                                -ms-transform: translateY(-50%);
+                                transform: translateY(-50%);
+                                background: url(../images/icon/footer.png)
+                                    no-repeat;
+                                background-size: 100% auto;
+                            }
+                        }
+                    }
+                }
+                .right-item {
+                    a {
+                        display: block;
+                        font-size: 16px;
+                        letter-spacing: -0.23px;
+                        color: #707070;
+                        padding: 8px 0;
+
+                        @include tablet {
+                            font-size: 14px;
+                        }
+
+                        @include mobile {
+                            // font-size: 14px;
+                            padding-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom {
+            width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #ddd;
+            margin-top: 60px;
+            padding-top: 25px;
+            @include desktop {
+                flex-direction: column;
+                background-color: #ecebe7;
+                width: 100%;
+                border: none;
+                padding: 32px 6.94% 50px;
+                margin-top: 0;
+            }
+            @include tablet {
+                padding: 0px 6.94% 40px;
+            }
+            @include mobile {
+            }
+            .bottom-con {
+                @include desktop {
+                    padding-top: 40px;
+                }
+
+                strong {
+                    font-size: 16px;
+                    letter-spacing: -0.3px;
+                    line-height: 22px;
+                    color: #707070;
+                    @include desktop {
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        color: #333;
+                    }
+
+                    @include mobile {
+                        font-size: 15px;
+                    }
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 300;
+                    letter-spacing: -0.2px;
+                    line-height: 15px;
+                    color: #707070;
+                    margin-top: 10px;
+                    @include mobile {
+                        font-size: 12px;
+                        letter-spacing: -1px;
+                    }
+                    span {
+                        font-size: 14px;
+                        @include mobile {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .num {
+                        position: relative;
+                        margin-left: 6px;
+                        padding-left: 6px;
+                        &::before {
+                            content: "";
+                            width: 1px;
+                            height: 10px;
+                            background-color: #ddd;
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copy {
+        position: relative;
+        width: 100%;
+        background-color: #ecebe7;
+        padding: 16px 0;
+        z-index: 5;
+        @include desktop {
+            background-color: #333;
+            padding: 18px 6.94% 15px;
+        }
+
+        .copy-wrap {
+            width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            @include desktop {
+                width: 100%;
+            }
+
+            .name {
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: -0.1px;
+                    color: rgba(51, 51, 51, 0.7);
+                    position: relative;
+                    padding-left: 19px;
+                    line-height: 18px;
+                    text-transform: uppercase;
+                    @include desktop {
+                        color: #fff;
+                    }
+
+                    @include mobile {
+                        font-size: 12px;
+                    }
+
+                    &::before {
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-52%);
+                        background-image: url(../images/icon/icon-footer-copy.png);
+                        background-repeat: no-repeat;
+                        background-size: 100% auto;
+                        @include desktop {
+                            background-image: url(../images/icon/copy2.png);
+                        }
+                    }
+                }
+            }
+            .center {
+                span {
+                    margin-left: auto;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: -0.2px;
+                    color: #707070;
+                    line-height: 18px;
+                    @include desktop {
+                        color: #fff;
+                    }
+
+                    @include mobile {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

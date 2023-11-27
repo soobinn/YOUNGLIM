@@ -16,14 +16,6 @@
         opacity: 0;
         visibility: hidden;
 
-        @include desktop {
-            display: none;
-        }
-
-        @include mobile {
-            padding: 0;
-        }
-
         &::after {
             content: "";
             position: absolute;
@@ -70,9 +62,7 @@
             width: 100%;
             bottom: 199px;
             text-align: center;
-            @include mobile {
-                bottom: 15%;
-            }
+
             .title {
                 transform: translateY(10px);
                 opacity: 0;
@@ -83,12 +73,6 @@
                 letter-spacing: -0.89px;
                 text-align: center;
                 text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
-                @include mobile {
-                    font-size: 34px;
-                    line-height: 34px;
-                    letter-spacing: -0.1px;
-                    font-weight: 400;
-                }
             }
             .desc {
                 transform: translateY(10px);
@@ -104,11 +88,6 @@
                 max-width: 370px;
                 margin: 0 auto;
                 text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
-
-                @include mobile {
-                    font-size: 14px;
-                    line-height: 20px;
-                }
             }
 
             .link-more {
@@ -125,9 +104,6 @@
             margin: 0;
             padding: 0;
             opacity: 0;
-            @include desktop {
-                cursor: auto;
-            }
         }
     }
 
@@ -175,26 +151,12 @@
         margin: 0 auto;
         width: 1240px;
 
-        @include desktop {
-            padding-left: 6.94%;
-            padding-right: 6.94%;
-            width: 100%;
-        }
-
         p {
             font-size: 24px;
             color: #333;
             font-weight: 300;
             line-height: 34px;
             letter-spacing: -1px;
-            @include desktop {
-                font-size: 20px;
-            }
-
-            @include mobile {
-                font-size: 18px;
-                line-height: 28px;
-            }
         }
 
         strong {
@@ -203,13 +165,6 @@
             color: #333;
             line-height: 34px;
             letter-spacing: -0.1px;
-
-            @include mobile {
-                padding-top: 6px;
-                font-size: 14px;
-                line-height: 20px;
-                letter-spacing: -0.12px;
-            }
         }
     }
     .lifeSwiper {
@@ -218,13 +173,6 @@
         margin-top: 60px;
         padding-left: 186px;
         cursor: url(../images/icon/Drag.png) 400 400, auto;
-        @include desktop {
-            cursor: auto;
-        }
-
-        @include mobile {
-            padding: 0;
-        }
 
         .cursor-icon {
             z-index: 9;
@@ -237,25 +185,9 @@
             background: url(https://s3.ap-northeast-2.amazonaws.com/younglim-front-bucket/images/icon-main-drag.png)
                 0 0 no-repeat;
             background-size: 100% auto;
-            @include mobile {
-                display: none;
-            }
-        }
-
-        .swiper-wrapper {
-            @include mobile {
-                padding: 30px 12px;
-            }
         }
 
         .swiper-slide {
-            width: 418px;
-            @include mobile {
-                width: 39%;
-                // display: none;
-                // margin-right: 12px;
-            }
-
             .link-life {
                 pointer-events: none;
             }
@@ -268,44 +200,26 @@
                 color: #fff;
                 line-height: 34px;
                 letter-spacing: -0.7px;
-                @include mobile {
-                    font-size: 16px;
-                    bottom: 10px;
-                    left: 10px;
-                }
             }
         }
 
         .swiper-scrollbar {
             display: none;
-
-            @include mobile {
-                display: block;
-                bottom: 15px;
-                padding: 0;
-            }
         }
     }
 }
 
 .sc-modern {
     padding-top: 284px;
-    @include mobile {
-        padding-top: 100px;
-    }
+
     .btn-wrap {
         height: 50px;
-        @include mobile {
-            height: auto;
-        }
+
         .btn-inner {
             display: flex;
             justify-content: flex-end;
             width: 1240px;
             margin: 0 auto;
-            @include desktop {
-                width: auto;
-            }
 
             .btn {
                 display: block;
@@ -316,9 +230,6 @@
                 position: relative;
                 color: #333;
                 text-align: center;
-                @include desktop {
-                    font-size: 16px;
-                }
 
                 &:hover {
                     font-weight: 500;
@@ -350,31 +261,16 @@
 
     .modern-gallary {
         position: relative;
-        height: 300vh;
+        height: 275vh;
         padding-bottom: 135px;
         padding-left: 1%;
         padding-right: 6.94%;
         background-color: #ecebe7;
-        @include desktop {
-            padding-left: 6.94%;
-            height: 215vh;
-        }
-        @include tablet {
-            height: 180vh;
-        }
-        @include mobile {
-            padding: 0;
-            height: 190vh;
-        }
 
         .gallary-wrap {
             position: absolute;
             top: 0;
             opacity: 0;
-
-            @include mobile {
-                position: absolute;
-            }
 
             &.on {
                 transition: 1s;
@@ -383,16 +279,10 @@
             .top {
                 display: flex;
 
-                @include mobile {
-                    display: flex;
-                    flex-direction: column;
-                }
                 .top-left {
                     width: 50%;
                     transform: translateY(100px);
-                    @include mobile {
-                        width: 100%;
-                    }
+
                     .link-modern {
                         position: relative;
 
@@ -406,31 +296,10 @@
                             font-weight: 300;
                             transform: rotate(-90deg);
                             transform-origin: 100% 100%;
-                            @include mobile {
-                                display: none;
-                            }
 
                             strong {
                                 font-weight: 500;
                                 padding-right: 10px;
-                                @include desktop {
-                                    font-size: 13px;
-                                }
-                                @include tablet {
-                                    font-size: 10px;
-                                }
-                            }
-                            span {
-                                @include desktop {
-                                    font-size: 13px;
-                                }
-                                @include tablet {
-                                    font-size: 10px;
-                                }
-                                @include mobile {
-                                    font-size: 35px;
-                                    letter-spacing: 20px;
-                                }
                             }
                         }
                     }
@@ -443,10 +312,6 @@
                     opacity: 0;
                     transition: 1s;
                     transform: translateY(40%);
-                    @include mobile {
-                        margin: 0 auto;
-                        min-width: 210px;
-                    }
 
                     &.on {
                         transform: translateY(20%);
@@ -464,37 +329,17 @@
                         font-weight: 300;
                         transform: rotate(-90deg);
                         transform-origin: 100% 100%;
-                        @include tablet {
-                            top: 0px;
-                        }
-                        @include mobile {
-                        }
 
                         strong {
                             font-weight: 500;
                             padding-right: 10px;
-                            @include desktop {
-                                font-size: 13px;
-                            }
-                            @include tablet {
-                                font-size: 10px;
-                            }
-                        }
-
-                        span {
-                            @include desktop {
-                                font-size: 13px;
-                            }
-                            @include tablet {
-                                font-size: 10px;
-                            }
                         }
                     }
                 }
             }
             .name {
                 text-align: center;
-                overflow: hidden;
+                // overflow: hidden;
 
                 span {
                     transform: translateY(120px);
@@ -505,17 +350,6 @@
                     color: #333;
                     line-height: 120px;
                     text-align: center;
-                    @include desktop {
-                        font-size: 100px;
-                    }
-                    @include tablet {
-                        font-size: 70px;
-                        letter-spacing: 40px;
-                    }
-                    @include mobile {
-                        font-size: 20px;
-                        letter-spacing: 20px;
-                    }
 
                     &.on {
                         transition: 1s;
@@ -529,7 +363,6 @@
                 flex-direction: column;
                 align-items: flex-end;
                 transition: 1s;
-                opacity: 0;
                 transform: translateY(0px);
                 &.on {
                     transform: translateY(-50px);
@@ -541,16 +374,6 @@
                     margin-top: 193px;
                     margin-right: 14.23%;
                     width: 56.94%;
-                    @include tablet {
-                        width: 60%;
-                        margin-top: 150px;
-                    }
-                    @include mobile {
-                        margin: 0;
-                        padding-left: 12px;
-                        margin-top: 60px;
-                        width: 100%;
-                    }
                 }
                 .img-box {
                     position: relative;
@@ -566,32 +389,10 @@
                         letter-spacing: -0.1px;
                         transform: rotate(-90deg);
                         transform-origin: 100% 100%;
-                        @include mobile {
-                            display: none;
-                        }
 
                         strong {
                             font-weight: 500;
                             padding-right: 10px;
-                            @include desktop {
-                                font-size: 13px;
-                            }
-                            @include tablet {
-                                font-size: 10px;
-                            }
-                            @include mobile {
-                                font-size: 16px;
-                                line-height: 20px;
-                            }
-                        }
-
-                        span {
-                            @include desktop {
-                                font-size: 13px;
-                            }
-                            @include tablet {
-                                font-size: 10px;
-                            }
                         }
                     }
                 }
@@ -607,10 +408,6 @@
                         line-height: 32px;
                         letter-spacing: -0.7px;
                         word-break: keep-all;
-                        @include mobile {
-                            font-size: 15px;
-                            line-height: 20px;
-                        }
                     }
                     .name {
                         text-align: left;
@@ -619,9 +416,6 @@
                         color: #333;
                         line-height: 34px;
                         letter-spacing: -0.1px;
-                        @include mobile {
-                            font-size: 16px;
-                        }
                     }
                     .link-modern {
                         display: inline-block;
@@ -641,15 +435,6 @@
                         font-weight: 400;
                         letter-spacing: -0.1px;
                         border-color: #8d8d8d;
-
-                        @include tablet {
-                            margin-top: 50px;
-                        }
-                        @include mobile {
-                            margin-top: 25px;
-                            font-size: 14px;
-                            padding: 3px 40px 3px 3px;
-                        }
 
                         &:after {
                             content: "";
@@ -675,16 +460,7 @@
     padding-top: 100px;
     margin: 0 auto;
     width: 1240px;
-    @include desktop {
-        width: auto;
-        background-color: #f6f5f3;
-        padding-top: 80px;
-        padding-bottom: 90px;
-    }
 
-    @include mobile {
-        padding: 80px 12px 90px;
-    }
     .headline {
         text-align: center;
         .title {
@@ -692,9 +468,6 @@
             color: #333;
             line-height: 34px;
             letter-spacing: -0.1px;
-            @include mobile {
-                font-size: 25px;
-            }
         }
         .desc {
             padding-top: 16px;
@@ -702,18 +475,9 @@
             color: #333;
             font-weight: 300;
             letter-spacing: -0.7px;
-            @include mobile {
-                padding: 16px 40px 0px;
-            }
 
             p {
                 line-height: 28px;
-
-                @include mobile {
-                    font-size: 12px;
-                    line-height: 20px;
-                    font-size: 14px;
-                }
             }
         }
 
@@ -763,9 +527,6 @@
         margin-top: 48px;
         position: relative;
         padding: 0 108px;
-        @include mobile {
-            padding: 0;
-        }
 
         .video-wrap {
             width: 100%;
@@ -798,13 +559,7 @@
     width: 1240px;
     margin: 0 auto;
     padding-top: 100px;
-    @include desktop {
-        width: auto;
-    }
-    @include tablet {
-    }
-    @include mobile {
-    }
+
     .headline {
         .title {
             font-size: 32px;
@@ -822,26 +577,8 @@
         margin: 0 -10px;
         display: flex;
         justify-content: center;
-        @include desktop {
-            width: 490px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            gap: 0;
-        }
-
-        @include mobile {
-            width: 100%;
-        }
     }
     .cate-item {
-        @include desktop {
-            margin: 0 10px;
-            height: 110px;
-        }
-
-        @include mobile {
-            width: 18%;
-        }
         .link-more {
             padding: 0;
             height: auto;
@@ -863,9 +600,6 @@
                 font-weight: 300;
                 line-height: 16px;
                 letter-spacing: -0.67px;
-                @include mobile {
-                    font-size: 10px;
-                }
             }
         }
     }
@@ -876,16 +610,6 @@
     width: 1240px;
     margin: 0 auto;
     padding-top: 100px;
-    @include desktop {
-        width: auto;
-        padding-left: 6.94%;
-        padding-right: 6.94%;
-        margin-top: 89px;
-    }
-    @include tablet {
-    }
-    @include mobile {
-    }
 
     .text-wrap {
         h2 {
@@ -906,14 +630,6 @@
             display: flex;
             width: 100%;
             justify-content: end;
-            @include desktop {
-                top: 105px;
-                padding-right: 6.94%;
-            }
-
-            @include mobile {
-                display: none;
-            }
 
             .swiper-pagination-bullet {
                 width: auto;
@@ -954,17 +670,12 @@
         .swiper-slide {
             display: flex;
             justify-content: space-between;
-            @include mobile {
-                flex-direction: column;
-            }
+
             .left {
                 width: 57.5%;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
-                @include mobile {
-                    width: 100%;
-                }
 
                 .top {
                     position: relative;
@@ -973,18 +684,11 @@
                     width: 42.03%;
                     margin-top: 1.55%;
                     position: relative;
-                    @include mobile {
-                        width: 100%;
-                        margin: 0;
-                    }
                 }
             }
             .right {
                 width: 41.45%;
                 position: relative;
-                @include mobile {
-                    width: 100%;
-                }
             }
 
             .name {
@@ -1005,42 +709,20 @@
 
     .more-wrap {
         position: relative;
-        @include mobile {
-            height: 400px;
-        }
     }
-    .img-box {
-        @include mobile {
-            height: 100%;
-        }
 
-        img {
-            @include mobile {
-                height: 100%;
-            }
-        }
-    }
     .text-box {
         position: absolute;
         text-align: center;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        @include mobile {
-            width: 100%;
-        }
 
         .title {
             font-size: 34px;
             color: #fff;
             line-height: 34px;
             letter-spacing: -0.1px;
-            @include tablet {
-                font-size: 28px;
-            }
-            @include mobile {
-                font-size: 23px;
-            }
         }
         .desc {
             padding-top: 13px;
@@ -1052,13 +734,6 @@
                 letter-spacing: -0.58px;
                 color: #fff;
                 font-size: 14px;
-                @include tablet {
-                    font-size: 13px;
-                }
-                @include mobile {
-                    padding: 0px 40px 0px;
-                    font-size: 14px;
-                }
             }
         }
         .link-wrap {
@@ -1074,9 +749,6 @@
                 color: #fff;
                 line-height: 42px;
                 letter-spacing: -0.7px;
-                @include mobile {
-                    font-size: 12px;
-                }
 
                 &:hover {
                     border-color: #fff;
@@ -1097,15 +769,7 @@
     opacity: 0;
     transition: 0.5s;
     transform: translateY(50px);
-    @include desktop {
-        width: 100%;
-        padding-left: 6.94%;
-        padding-right: 6.94%;
-    }
 
-    @include mobile {
-        opacity: 1;
-    }
     &.on {
         transform: translateY(0px);
         opacity: 1;
@@ -1133,9 +797,6 @@
                 color: #333;
                 border-bottom: 1px solid #8d8d8d;
                 margin-top: 14px;
-                @include tablet {
-                    height: 30px;
-                }
             }
         }
     }
@@ -1146,16 +807,9 @@
             display: flex;
             justify-content: center;
             gap: 2%;
-            @include mobile {
-                flex-direction: column;
-            }
         }
         .maitem {
             width: 32%;
-            @include mobile {
-                width: 100%;
-                margin-top: 10px;
-            }
 
             .text-box {
                 position: relative;
@@ -1168,19 +822,9 @@
                 line-height: 1.5rem;
                 max-height: 3rem;
                 overflow: hidden;
-                @include mobile {
-                    margin: 0;
-                }
+
                 strong {
                     font-weight: 500;
-                    @include tablet {
-                        font-size: 14px;
-                    }
-                }
-                span {
-                    @include tablet {
-                        font-size: 14px;
-                    }
                 }
             }
         }
@@ -1193,9 +837,6 @@
     opacity: 0;
     transform: translateY(0px);
     border-top: 1px solid #e7e7e7;
-    @include mobile {
-        opacity: 1;
-    }
 
     &.on {
         transform: translateY(-50px);
@@ -1207,12 +848,6 @@
         padding-bottom: 10px;
         margin: 0 auto;
         width: 1240px;
-
-        @include desktop {
-            width: 100%;
-            padding-right: 6.94%;
-            padding-left: 6.94%;
-        }
     }
     .headline {
         .desc {
@@ -1222,12 +857,6 @@
             font-weight: 300;
             line-height: 34px;
             letter-spacing: -1px;
-
-            @include mobile {
-                width: 100%;
-                font-size: 14px;
-                line-height: 20px;
-            }
         }
 
         strong {
@@ -1245,18 +874,11 @@
             display: flex;
             margin-top: 32px;
             justify-content: space-between;
-            @include mobile {
-                flex-direction: column;
-            }
         }
         .qna-item {
             width: 30.9%;
             padding: 0 4% 4%;
             box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
-            @include mobile {
-                width: 100%;
-                margin-top: 10px;
-            }
 
             &:hover {
                 outline: 1px solid #000;
@@ -1271,9 +893,6 @@
                     letter-spacing: -0.81px;
                     text-align: center;
                     display: block;
-                    @include desktop {
-                        font-size: 16px;
-                    }
                 }
 
                 > div {
@@ -1289,9 +908,6 @@
                         font-weight: 300;
                         line-height: 24px;
                         padding-right: 15px;
-                        @include desktop {
-                            font-size: 12px;
-                        }
 
                         &::before {
                             content: "";
@@ -1323,32 +939,16 @@
     width: 1240px;
     margin: 0 auto;
     padding-top: 100px;
-    @include desktop {
-        width: 100%;
-        padding-right: 6.94%;
-        padding-left: 6.94%;
-    }
-
-    @include mobile {
-        padding-right: 3.94%;
-        padding-left: 3.94%;
-    }
 
     .start-wrap {
         display: flex;
         justify-content: space-between;
-        @include mobile {
-            flex-direction: column;
-        }
+
         .left,
         .right {
             width: 48.875%;
             position: relative;
             height: 100%;
-            @include mobile {
-                width: 100%;
-                margin-top: 20px;
-            }
 
             .text-box {
                 position: absolute;
@@ -1361,34 +961,16 @@
                         font-size: 32px;
                         line-height: 34px;
                         letter-spacing: -0.1px;
-                        @include desktop {
-                            font-size: 24px;
-                        }
-                        @include tablet {
-                        }
-                        @include mobile {
-                        }
                     }
                     .desc {
                         padding-top: 10px;
                         line-height: 24px;
-                        @include desktop {
-                            font-size: 14px;
-                            line-height: 20px;
-                        }
-
-                        @include mobile {
-                            font-size: 10px;
-                        }
 
                         p {
                             font-size: 16px;
                             font-weight: 300;
                             letter-spacing: -0.67px;
                             line-height: 20px;
-                            @include desktop {
-                                font-size: 14px;
-                            }
                         }
                     }
 

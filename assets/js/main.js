@@ -28,8 +28,6 @@ $(window).scroll(function () {
 });
 
 $(".nav-item").mouseenter(function (e) {
-    console.log($(e.currentTarget).attr("id"));
-
     $("header .subject").addClass("on");
 
     if (
@@ -141,7 +139,6 @@ ScrollTrigger.create({
     end: "100% 60%",
     scrub: 0,
     onEnter: () => {
-        // 스크롤 영역 진입 시 실행할 동작
         document.querySelector(".sc-magazine").classList.add("on");
     },
 });
@@ -151,7 +148,6 @@ ScrollTrigger.create({
     end: "100% 60%",
     scrub: 0,
     onEnter: () => {
-        // 스크롤 영역 진입 시 실행할 동작
         document.querySelector(".sc-qna").classList.add("on");
     },
 });

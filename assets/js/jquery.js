@@ -17,29 +17,12 @@ var swiper = new Swiper(".lifeSwiper", {
         prevEl: ".swiper-button-prev",
     },
 
-    slidesPerView: "auto",
+    slidesPerView: "3",
     spaceBetween: 30,
     scrollbar: {
         el: ".swiper-scrollbar",
     },
-    breakpoints: {
-        // 반응형
-        320: {
-            spaceBetween: 10,
-        },
-    },
 });
-
-// var swiper = new Swiper(".pickSwiper", {
-//     pagination: {
-//         el: ".swiper-pagination",
-//         // clickable: true,
-//         touchRatio: 0, //드래그 금지
-//         renderBullet: function (index, className) {
-//             return '<span class="' + className + '">' + (index + 1) + "</span>";
-//         },
-//     },
-// });
 
 var swiper = new Swiper(".bannerSwiper", {
     spaceBetween: 0,

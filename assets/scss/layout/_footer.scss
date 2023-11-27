@@ -7,10 +7,6 @@ footer {
         background-color: #f6f5f3;
         // width: 100%;
         padding: 42px 0 50px;
-        @include desktop {
-            background-color: #faf9f7;
-            padding: 42px 0 0 0;
-        }
 
         .top {
             width: 1240px;
@@ -22,49 +18,20 @@ footer {
                 width: 100%;
                 padding: 32px 6.94% 50px;
             }
-            @include tablet {
-                padding: 0px 6.94% 0px;
-            }
-            @include mobile {
-                padding-top: 0px;
-                padding-bottom: 0px;
-            }
+
             .left {
                 .title {
                     font-size: 24px;
                     font-weight: 500;
                     letter-spacing: -0.92px;
                     color: #707070;
-
-                    @include mobile {
-                        padding-bottom: 30px;
-                    }
                 }
             }
             .right {
                 display: flex;
                 gap: 110px;
-                @include desktop {
-                    flex-direction: column;
-                    padding-top: 5%;
-                    gap: 0;
-                }
 
                 .right-list {
-                    // width: 100px;
-                    @include desktop {
-                        border-bottom: 1px solid #ddd;
-                        margin-bottom: 30px;
-                        padding-bottom: 30px;
-                    }
-
-                    &:last-child {
-                        @include desktop {
-                            width: 114px;
-                            border: none;
-                        }
-                    }
-
                     &:last-child {
                         a {
                             position: relative;
@@ -92,15 +59,6 @@ footer {
                         letter-spacing: -0.23px;
                         color: #707070;
                         padding: 8px 0;
-
-                        @include tablet {
-                            font-size: 14px;
-                        }
-
-                        @include mobile {
-                            // font-size: 14px;
-                            padding-top: 0px;
-                        }
                     }
                 }
             }
@@ -113,19 +71,7 @@ footer {
             border-top: 1px solid #ddd;
             margin-top: 60px;
             padding-top: 25px;
-            @include desktop {
-                flex-direction: column;
-                background-color: #ecebe7;
-                width: 100%;
-                border: none;
-                padding: 32px 6.94% 50px;
-                margin-top: 0;
-            }
-            @include tablet {
-                padding: 0px 6.94% 40px;
-            }
-            @include mobile {
-            }
+
             .bottom-con {
                 @include desktop {
                     padding-top: 40px;
@@ -136,16 +82,6 @@ footer {
                     letter-spacing: -0.3px;
                     line-height: 22px;
                     color: #707070;
-                    @include desktop {
-                        font-size: 15px;
-                        font-weight: 500;
-                        line-height: 20px;
-                        color: #333;
-                    }
-
-                    @include mobile {
-                        font-size: 15px;
-                    }
                 }
                 p {
                     font-size: 14px;
@@ -154,15 +90,9 @@ footer {
                     line-height: 15px;
                     color: #707070;
                     margin-top: 10px;
-                    @include mobile {
-                        font-size: 12px;
-                        letter-spacing: -1px;
-                    }
+
                     span {
                         font-size: 14px;
-                        @include mobile {
-                            font-size: 12px;
-                        }
                     }
 
                     .num {
@@ -191,19 +121,12 @@ footer {
         background-color: #ecebe7;
         padding: 16px 0;
         z-index: 5;
-        @include desktop {
-            background-color: #333;
-            padding: 18px 6.94% 15px;
-        }
 
         .copy-wrap {
             width: 1240px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            @include desktop {
-                width: 100%;
-            }
 
             .name {
                 span {
@@ -215,13 +138,6 @@ footer {
                     padding-left: 19px;
                     line-height: 18px;
                     text-transform: uppercase;
-                    @include desktop {
-                        color: #fff;
-                    }
-
-                    @include mobile {
-                        font-size: 12px;
-                    }
 
                     &::before {
                         content: "";
@@ -234,9 +150,6 @@ footer {
                         background-image: url(../images/icon/icon-footer-copy.png);
                         background-repeat: no-repeat;
                         background-size: 100% auto;
-                        @include desktop {
-                            background-image: url(../images/icon/copy2.png);
-                        }
                     }
                 }
             }
@@ -248,13 +161,6 @@ footer {
                     letter-spacing: -0.2px;
                     color: #707070;
                     line-height: 18px;
-                    @include desktop {
-                        color: #fff;
-                    }
-
-                    @include mobile {
-                        font-size: 12px;
-                    }
                 }
             }
         }

@@ -33,7 +33,7 @@
         visibility: visible;
 
         &::after {
-            background-image: url(../images/content/icon-arrow.png);
+            background-image: url(../images/content/main-next.png);
         }
     }
     .cursor.prev {
@@ -41,8 +41,8 @@
         visibility: visible;
 
         &::after {
-            background-image: url(../images/content/icon-arrow.png);
-            transform: rotate(180deg);
+            background-image: url(../images/content/main-prev.png);
+        
         }
     }
     .mySwiper {

@@ -19,13 +19,13 @@
         &::after {
             content: "";
             position: absolute;
-            width: 100%;
-            height: 100%;
+            width: 70px;
+            height: 70%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-            top: 2px;
-            left: 2px;
+            top: 17%;
+            left: -17%;
         }
     }
     .cursor.next {
@@ -33,7 +33,7 @@
         visibility: visible;
 
         &::after {
-            background-image: url(../images/content/main-next.png);
+            background-image: url(../images/content/icon-arrow.png);
         }
     }
     .cursor.prev {
@@ -41,8 +41,8 @@
         visibility: visible;
 
         &::after {
-            background-image: url(../images/content/main-prev.png);
-        
+            background-image: url(../images/content/icon-arrow.png);
+            transform: rotate(180deg);
         }
     }
     .mySwiper {
@@ -917,8 +917,7 @@
                             right: 0;
                             width: 13px;
                             height: 18px;
-                            background: 
-                                url(../images/content/link-made.png)
+                            background: url(../images/content/icon-arrow-contact.png)
                                 no-repeat 50% / cover;
                         }
                         &::after {

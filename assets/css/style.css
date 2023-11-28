@@ -1497,13 +1497,13 @@ footer .copy .copy-wrap .center span {
 .sc-main .cursor::after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 70px;
+  height: 70%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  top: 2px;
-  left: 2px;
+  top: 17%;
+  left: -17%;
 }
 .sc-main .cursor.next {
   opacity: 1;

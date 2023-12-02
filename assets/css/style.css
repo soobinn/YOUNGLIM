@@ -1755,6 +1755,7 @@ footer .copy .copy-wrap .center span {
 }
 .sc-modern .modern-gallary .gallary-wrap .top .top-left .link-modern {
   position: relative;
+  display: block;
 }
 .sc-modern .modern-gallary .gallary-wrap .top .top-left .link-modern .text-box {
   position: absolute;
